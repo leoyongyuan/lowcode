@@ -1,6 +1,5 @@
-import React, { memo } from 'react'
-import './App.css';
-
+import React, { memo } from "react";
+import "./App.css";
 // function MyComponent<T>(props: T) {
 //   return (
 //   	<div></div>
@@ -9,10 +8,9 @@ import './App.css';
 
 interface IProps {}
 
-const App:React.FC<IProps> = memo((props) => {
-  return (
-    <div>App</div>
-  )
+const App: React.FC<IProps> = memo((props) => {
+  console.log(props);
+  return <div>App</div>;
 });
 
 export default App;
