@@ -1,0 +1,12 @@
+.tab {
+  width: 300px;
+}
+
+.ant-tabs-tab {
+  width: 132px;
+}
+
+.ant-tabs-tab-btn {
+  margin: auto;
+  font-size: 20px;
+}

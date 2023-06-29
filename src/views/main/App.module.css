@@ -1,0 +1,11 @@
+.root {
+  height: 648px;
+  width: 1160px;
+  overflow: auto;
+}
+
+.editor {
+  width: 1200px;
+  height: 1200px;
+  position: relative;
+}

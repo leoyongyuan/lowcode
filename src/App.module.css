@@ -1,0 +1,33 @@
+@import "./root.css";
+.root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  height: 10vh;
+  border-bottom: 1px solid var(--main-border-color);
+  background-color: var(--main-background-color);
+}
+
+.body {
+  flex: 1;
+  background-color: var(--main-background-color);
+  display: flex;
+}
+
+.left {
+  width: 5%;
+  border-right: 1px solid var(--main-border-color);
+}
+
+.right {
+  width: 20%;
+  border-left: 1px solid rgb(149, 139, 143);
+}
+
+.main {
+  flex: 1;
+}
