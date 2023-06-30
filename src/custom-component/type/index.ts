@@ -1,20 +1,26 @@
-interface componentStyleType {
-  width?: number;
-  height?: number;
-  borderWidth?: number;
-  borderColor?: string;
-  borderRadius?: string;
-  fontSize?: string;
-  fontWeight?: number;
-  lineHeight?: string;
-  letterSpacing?: number;
-  textAlign?: string;
-  color?: string;
-  backgroundColor?: string;
-}
+type styleType =
+  | "width"
+  | "height"
+  | "borderWidth"
+  | "borderColor"
+  | "borderRadius"
+  | "fontSize"
+  | "fontWeight"
+  | "lineHeight"
+  | "letterSpacing"
+  | "color"
+  | "backgroundColor";
+
+type AdditionalStyles = {
+  [key: string]: string | number | undefined;
+};
+
+// Record<styleType, string | number> 表示一个对象类型，其中键的类型为 styleType，值的类型为 string 或 number。
+// Partial<Type> 用于将对象类型中的所有属性变为可选属性
+type componentStyleType = Partial<Record<styleType, string | number>> & AdditionalStyles;
 
 interface componentEventType {
-  click?: string;
+  click?: (param?: any) => void; // eslint-disable-line
 }
 
 interface componentDataType {
