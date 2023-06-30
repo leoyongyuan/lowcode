@@ -1,9 +1,9 @@
-import React, { memo, useRef } from "react";
+import React, { memo, useRef, useEffect } from "react";
 import componentList from "../../custom-component/component-data";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { deepCopy, generateID } from "../../utils/index";
 import AppStyle from "./App.module.css";
-import { addComponent } from "../../redux/modules/index";
+import { addComponent, setCurComponent } from "../../redux/modules/index";
 import { componentDataType } from "../../custom-component/type/index";
 import Render from "./render";
 
@@ -14,6 +14,9 @@ const Editor: React.FC = memo(() => {
     shallowEqual
   );
   const dispatch = useDispatch();
+  useEffect(() => {
+    editorComponent;
+  }, [editorComponent]);
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     e.stopPropagation();
@@ -33,7 +36,11 @@ const Editor: React.FC = memo(() => {
 
   const renderComponent = () => {
     return editorComponent.map((component: componentDataType) => {
-      return Render(component);
+      return (
+        <div onMouseDown={() => dispatch(setCurComponent(component))} key={component.id}>
+          {Render(component)}
+        </div>
+      );
     });
   };
 
