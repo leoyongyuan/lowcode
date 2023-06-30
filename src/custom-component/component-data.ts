@@ -20,7 +20,51 @@ const commonAttr: commonAttrType = {
 
 const list: componentDataType[] = [
   {
-    component: "Button",
+    component: "_Button",
+    name: "按钮",
+    icon: "icon-button",
+    style: {
+      width: 100,
+      height: 34,
+      borderWidth: 1,
+      borderColor: "",
+      borderRadius: "",
+      fontSize: "",
+      fontWeight: 400,
+      lineHeight: "",
+      letterSpacing: 0,
+      textAlign: "",
+      color: "",
+      backgroundColor: "",
+    },
+    event: {
+      click: "",
+    },
+  },
+  {
+    component: "_Button",
+    name: "按钮",
+    icon: "icon-button",
+    style: {
+      width: 100,
+      height: 34,
+      borderWidth: 1,
+      borderColor: "",
+      borderRadius: "",
+      fontSize: "",
+      fontWeight: 400,
+      lineHeight: "",
+      letterSpacing: 0,
+      textAlign: "",
+      color: "",
+      backgroundColor: "",
+    },
+    event: {
+      click: "",
+    },
+  },
+  {
+    component: "_Button",
     name: "按钮",
     icon: "icon-button",
     style: {
