@@ -10,3 +10,13 @@
   margin: auto;
   font-size: 20px;
 }
+
+.input-container {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.Attr {
+  height: 600px;
+  overflow: auto;
+}
