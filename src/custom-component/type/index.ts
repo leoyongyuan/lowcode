@@ -21,6 +21,7 @@ interface componentDataType {
   component: string;
   name: string;
   icon: string;
+  id?: number;
   style: componentStyleType;
   event: componentEventType;
 }

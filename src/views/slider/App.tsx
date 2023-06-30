@@ -1,7 +1,7 @@
 import React, { memo, useMemo, useState } from "react";
 import { Button, Tooltip } from "antd";
 import AppStyle from "./App.module.css";
-
+import CompontentList from "../../components/components-list";
 const App: React.FC = memo(() => {
   const [arrow] = useState("Show");
   const [isShowComponentList, setIsShowComponentList] = useState(false);
@@ -34,7 +34,11 @@ const App: React.FC = memo(() => {
       <Tooltip placement="right" title={"Right"} arrow={mergedArrow}>
         <Button>Right</Button>
       </Tooltip>
-      {isShowComponentList && <div className={AppStyle.showPanel}></div>}
+      {isShowComponentList && (
+        <div className={AppStyle.showPanel}>
+          <CompontentList></CompontentList>
+        </div>
+      )}
     </div>
   );
 });
