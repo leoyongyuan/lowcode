@@ -33,13 +33,10 @@ const list: componentDataType[] = [
       fontWeight: 400,
       lineHeight: "",
       letterSpacing: 0,
-      textAlign: "",
       color: "",
       backgroundColor: "",
     },
-    event: {
-      click: "",
-    },
+    event: {},
   },
   {
     component: "_Button",
@@ -55,13 +52,10 @@ const list: componentDataType[] = [
       fontWeight: 400,
       lineHeight: "",
       letterSpacing: 0,
-      textAlign: "",
       color: "",
       backgroundColor: "",
     },
-    event: {
-      click: "",
-    },
+    event: {},
   },
   {
     component: "_Button",
@@ -77,13 +71,10 @@ const list: componentDataType[] = [
       fontWeight: 400,
       lineHeight: "",
       letterSpacing: 0,
-      textAlign: "",
       color: "",
       backgroundColor: "",
     },
-    event: {
-      click: "",
-    },
+    event: {},
   },
 ];
 
