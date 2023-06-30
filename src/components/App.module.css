@@ -1,0 +1,9 @@
+.component {
+  height: 50px;
+  width: 100px;
+  margin: 20px 20px 10px 20px;
+  display: inline-block;
+  border: 1px solid var(--main-border-color);
+  background-color: var(--component-background-color);
+  cursor: pointer;
+}
