@@ -7,7 +7,7 @@
 }
 
 .header {
-  height: 10vh;
+  min-height: 10vh;
   border-bottom: 1px solid var(--main-border-color);
   background-color: var(--main-background-color);
 }
